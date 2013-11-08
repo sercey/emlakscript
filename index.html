@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Emlakscript by sercey</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Emlakscript</h1>
+        <p>Emlak Script</p>
+
+        <p class="view"><a href="https://github.com/sercey/emlakscript">View the Project on GitHub <small>sercey/emlakscript</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/sercey/emlakscript/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sercey/emlakscript/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sercey/emlakscript">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="emlak-script" class="anchor" href="#emlak-script"><span class="octicon octicon-link"></span></a>Emlak Script</h1>
+
+<h5>
+<a name="yay%C4%B1nlanan-son-kararl%C4%B1-s%C3%BCr%C3%BCm-10-08112013" class="anchor" href="#yay%C4%B1nlanan-son-kararl%C4%B1-s%C3%BCr%C3%BCm-10-08112013"><span class="octicon octicon-link"></span></a>Yayınlanan Son Kararlı Sürüm: 1.0 (08.11.2013)</h5>
+
+<h2>
+<a name="kurulum-y%C3%B6nergeleri" class="anchor" href="#kurulum-y%C3%B6nergeleri"><span class="octicon octicon-link"></span></a>Kurulum Yönergeleri</h2>
+
+<ul>
+<li>Tüm dosyaları ftp ile sunucuya yükleyiniz</li>
+  <li>Hosting panelinizden bir mysql veritabanı oluşturup, <b>veritabani.sql</b> dosyasını import edin</li>
+  <li>
+<b>protected/config/main.php</b> dosyasında yapılacak değişiklikler;
+    <ul>
+<li>En üst bölümde bulunan <b>'name'</b> bölümüne web siteniz için bir isim yazın. Bu bazı sayfa başlıklarında ve metinlerde görünecektir.</li>
+      <li>
+<b>'db'</b> altındaki <b>'connectionString', 'username' ve 'password'</b> alanlarını oluşturduğunuz veritabanına göre düzenleyin.</li>
+      <li>Eğer payPal sistemini kullanacaksanız, bir payPal hesabı alın ve api sistemini aktif edin. Ardından <b>'Paypal'</b> bölümü altındaki verileri kendinize göre düzenleyin.</li>
+      <li>Sistemin mail göndermek için kullandığı ayarları <b>'Smtpmail'</b> bölümünden düzenleyin.</li>
+    </ul>
+</li>
+  <li>
+<b>Yazma izni</b> verilecek klasörler;
+    <ul>
+<li><b>/uploads</b></li>
+      <li><b>/assets</b></li>
+      <li><b>/images/ilan</b></li>
+      <li><b>/images/magaza</b></li>
+      <li><b>/images/slider</b></li>
+      <li><b>/protected/runtime</b></li>
+    </ul>
+</li>
+</ul><p>Yukarıdaki yönergeler sistemin sağlıklı çalışabilmesi için yeterlidir. Ancak profesyonel bir kullanıcı yada programcı iseniz <b>caching, url routing, error log</b> gibi bileşenleri de değiştirerek kendinize en uygun konfigürasyonu elde edebilirsiniz.</p>
+
+<h2>
+<a name="hata-bildirimi" class="anchor" href="#hata-bildirimi"><span class="octicon octicon-link"></span></a>Hata Bildirimi</h2>
+
+<p>Hata yönetimi işlemleri de bu platformdan yürütülecektir. Sağ tarafta bulunan <b>issues</b> alanından hata bildirimi yapabilirsiniz. Bildiriler çoğunlukla aynı gün içinde değerlendirilecektir.</p>
+
+<h2>
+<a name="sistem-gereksinimleri" class="anchor" href="#sistem-gereksinimleri"><span class="octicon octicon-link"></span></a>Sistem Gereksinimleri</h2>
+
+<p>Platform Yii framework kullanılarak inşa edildiği için framework'un gerektirdiği bazı bileşen ve değerler vardır. Bunlar zorunlu ve önerilen olarak 2 bölümde bildirilmiştir;</p>
+
+<h4>
+<a name="zorunlu-olan-gereksinimler" class="anchor" href="#zorunlu-olan-gereksinimler"><span class="octicon octicon-link"></span></a>Zorunlu olan gereksinimler</h4>
+
+<p>Günümüz birçok sunucusu zaten aşağıda belirtilen gereksinimleri karşılamaktadır. Ancak ortak bir sunucu(hosting) kullanıyorsanız tüm bileşenler kurulu olmayabilir. Bunun için lütfen sunucu yöneticisine danışın.</p>
+
+<ul>
+<li>PHP sürümü 5.1.0 ve üstü olmalıdır</li>
+  <li>$_SERVER değişkeni kullanılabilir olmalıdır</li>
+  <li>Reflection eklentisi</li>
+  <li>PCRE eklentisi</li>
+  <li>SPL eklentisi</li>
+  <li>DOM eklentisi</li>
+  <li>PDO eklentisi</li>
+  <li>PDO MySQL eklentisi</li>
+  <li>PDO SQLite eklentisi</li>
+  <li>SOAP eklentisi</li>
+  <li>GD eklentisi</li>
+</ul><h4>
+<a name="%C3%96nerilen-bile%C5%9Fenler" class="anchor" href="#%C3%96nerilen-bile%C5%9Fenler"><span class="octicon octicon-link"></span></a>Önerilen bileşenler</h4>
+
+<ul>
+<li>APC eklentisi (cache sistemidir. Kesinlikle önerilmektedir. %70'e kadar bir performans artışı sağlar)</li>
+  <li>Memcache eklentisi (APC istemiyorsanız ve farklı 2 sunucu kullanmak isterseniz yüksek performans sağlar)</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sercey">sercey</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
