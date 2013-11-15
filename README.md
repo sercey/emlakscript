@@ -46,6 +46,7 @@ Günümüz birçok sunucusu zaten aşağıda belirtilen gereksinimleri karşıla
 <ul>
   <li>PHP sürümü 5.1.0 ve üstü olmalıdır</li>
   <li>$_SERVER değişkeni kullanılabilir olmalıdır</li>
+  <li>safe_mode pasif(off) olmalıdır.</li>
   <li>Reflection eklentisi</li>
   <li>PCRE eklentisi</li>
   <li>SPL eklentisi</li>
@@ -62,3 +63,6 @@ Günümüz birçok sunucusu zaten aşağıda belirtilen gereksinimleri karşıla
   <li>APC eklentisi (cache sistemidir. Kesinlikle önerilmektedir. %70'e kadar bir performans artışı sağlar)</li>
   <li>Memcache eklentisi (APC istemiyorsanız ve farklı 2 sunucu kullanmak isterseniz yüksek performans sağlar)</li>
 </ul>
+
+<h4>Sorumluluklar</h4>
+Sistemde meydana gelebilecek herhangi bir problem yada güvenlik açığı gibi sebeplerden dolayı oluşabilecek zarardan ancak script'i kullanan kurum/şahıs kendisi sorumludur.
