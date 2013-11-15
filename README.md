@@ -56,6 +56,7 @@ Günümüz birçok sunucusu zaten aşağıda belirtilen gereksinimleri karşıla
   <li>PDO SQLite eklentisi</li>
   <li>SOAP eklentisi</li>
   <li>GD eklentisi</li>
+  <li>ionCube eklentisi</li>
 </ul>
 
 <h4>Önerilen bileşenler</h4>
