@@ -1,7 +1,7 @@
 Emlak Script
 ===========
 
-<h5>Yayınlanan Son Kararlı Sürüm: 1.0 (08.11.2013)</h5>
+<h5>Yayınlanan Son Kararlı Sürüm: 1.2 (26.11.2013)</h5>
 
 
 Kurulum Yönergeleri
