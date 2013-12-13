@@ -14,7 +14,7 @@ Kurulum Yönergeleri
     <ul>
       <li>En üst bölümde bulunan <b>'name'</b> bölümüne web siteniz için bir isim yazın. Bu bazı sayfa başlıklarında ve metinlerde görünecektir.</li>
       <li><b>'db'</b> altındaki <b>'connectionString', 'username' ve 'password'</b> alanlarını oluşturduğunuz veritabanına göre düzenleyin.</li>
-      <li>Eğer payPal sistemini kullanacaksanız, bir payPal hesabı alın ve api sistemini aktif edin. Ardından <b>'Paypal'</b> bölümü altındaki verileri kendinize göre düzenleyin.</li>
+      <li>Eğer payPal sistemini kullanacaksanız, bir payPal hesabı alın ve api sistemini aktif edin (<a href="http://serkanceylan.net/internet/paypal-api-erisimi-olusturma/" target="_blank">Nasıl yapabilirim ?</a>). Ardından <b>'Paypal'</b> bölümü altındaki verileri aldığınız api bilgilerine göre düzenleyin.</li>
       <li>Facebook ile login için bir facebook uygulaması oluşturun ve ayarlarını yapın. Ardından 'facebookSdk' altındaki 'appId' ve 'secret' bölümlerini düzenleyin.</li>
       <li>Sistemin mail göndermek için kullandığı ayarları <b>'Smtpmail'</b> bölümünden düzenleyin.</li>
     </ul>
